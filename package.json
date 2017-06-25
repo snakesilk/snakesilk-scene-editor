@@ -1,0 +1,15 @@
+{
+  "name": "snakesilk-scene-editor",
+  "version": "0.0.0",
+  "description": "Scene Editor for SnakeSilk Scenes using XML as storage format.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snakesilk/snakesilk-scene-editor.git"
+  },
+  "author": "Pontus Persson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/snakesilk/snakesilk-scene-editor/issues"
+  },
+  "homepage": "https://github.com/snakesilk/snakesilk-scene-editor#readme"
+}
