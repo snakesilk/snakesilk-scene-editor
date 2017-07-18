@@ -1,0 +1,13 @@
+.MenuBar {
+  display: flex;
+}
+
+.MenuBar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+
+.MenuBar ul > li {
+  margin: .5em;
+}

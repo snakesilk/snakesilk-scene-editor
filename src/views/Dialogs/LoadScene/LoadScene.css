@@ -1,0 +1,15 @@
+.LoadScene {
+
+}
+
+.LoadScene .location input {
+  width: 40em;
+}
+
+.LoadScene .recent li {
+  cursor: pointer;
+}
+
+.LoadScene .recent li:hover {
+  color: #fff;
+}

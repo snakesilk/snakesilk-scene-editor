@@ -1,0 +1,27 @@
+.Dialogs {
+  position: absolute;
+    left: 50%;
+    top: 50%;
+  z-index: 2;
+}
+
+.Dialogs > .dialog {
+  background: #000;
+  border-radius: .5em;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 20em;
+  min-height: 10em;
+  padding: 2em;
+  position: relative;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.Dialogs > .dialog > button {
+  background: #e40033;
+  position: absolute;
+    top: 0;
+    right: 0;
+}
