@@ -1,0 +1,144 @@
+.SceneEditor,
+.SceneEditor > div,
+.Workspace,
+.Workspace > .viewport {
+    height: 100%;
+}
+
+.SceneEditor button {
+    margin: .2em;
+}
+
+.Workspace {
+    cursor: default;
+    position: relative;
+    width: 100%;
+    -webkit-user-select: none;
+}
+
+.Workspace .viewport,
+.Workspace .viewport * {
+    -webkit-user-select: none;
+}
+
+.Workspace .viewport > canvas {
+    image-rendering: pixelated;
+}
+
+.Workspace .viewport .coords {
+    /*background-color: rgba(0,0,0,.5);*/
+    color: #fff;
+    font-family: monospace;
+    pointer-events: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    text-align: center;
+}
+
+.SceneEditor .console {
+    background: rgba(0,0,0, 1);
+    border: solid 1px #509bf5;
+    left: 50%;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+.SceneEditor .console textarea[name=console] {
+    box-sizing: border-box;
+    display: block;
+    font-family: monospace;
+    height: 90%;
+    width: 100%;
+}
+
+.Workspace .panel {
+    background-color: rgba(0,0,0,.85);
+    border-color: rgba(160,195,210,.3);
+    border-radius: 0;
+    bottom: 0;
+    position: absolute;
+    top: 0;
+    width: 150px;
+}
+
+.Workspace legend {
+    margin: 0.2em 0;
+}
+
+.Workspace .panel fieldset {
+    margin-bottom: 1em;
+}
+
+.Workspace .panel label span {
+    display: flex;
+}
+
+.Workspace .panel.view {
+    border-right-width: 1px;
+    left: -140px;
+}
+
+.Workspace .panel.view:hover,
+.Workspace .panel.view.locked {
+    left: 0;
+}
+
+.Workspace .panel.item {
+    border-left-width: 1px;
+    right: -140px;
+    text-align: left;
+}
+
+.Workspace .panel.item:hover,
+.Workspace .panel.item.locked {
+    right: 0;
+}
+
+.Workspace .panel.item .properties input[type=text] {
+    color: #fff;
+    font-family: monospace;
+    padding: .1em .2em;
+    text-align: right;
+    width: 5em;
+}
+
+.Workspace .panel.item .properties input[disabled] {
+    opacity: .5;
+}
+
+.Workspace .palette {
+    background-color: rgba(0,0,0,.6);
+    left: 25%;
+    margin: -5px;
+    position: absolute;
+    overflow: auto;
+    right: 25%;
+    top: 5%;
+    transition: all .3s ease;
+    width: 50%;
+}
+
+.Workspace .palette.hidden {
+    opacity: 0;
+    top: -100%;
+}
+
+.Workspace .palette .animation {
+    border: solid 1px rgba(0,0,0,0);
+    box-shadow: 0 0 8px 0 rgba(0,0,0,1);
+    box-sizing: border-box;
+    float: left;
+    image-rendering: pixelated;
+    margin: 2px;
+    pointer-events: all;
+    zoom: 2;
+}
+
+.Workspace .palette .animation.selected {
+    border-color: rgba(0, 255, 255, .8);
+}

@@ -1,0 +1,14 @@
+.App {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.App > .MenuBar {
+  flex: 0 1 auto;
+}
+
+.App > .WorkSpaces {
+  flex: 1;
+}
+

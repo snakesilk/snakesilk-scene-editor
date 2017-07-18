@@ -1,0 +1,9 @@
+.Export {
+
+}
+
+.Export .preview textarea {
+  font-family: monospace;
+  height: 20em;
+  width: 46em;
+}

@@ -1,15 +1,26 @@
 {
-  "name": "snakesilk-scene-editor",
-  "version": "0.0.0",
-  "description": "Scene Editor for SnakeSilk Scenes using XML as storage format.",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/snakesilk/snakesilk-scene-editor.git"
+  "name": "snakesilk-editor",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@scarbor/redux-user-storage": "^0.1.0",
+    "@snakesilk/engine": ">=0.5.0",
+    "@snakesilk/megaman-kit": "^0.7.1",
+    "@snakesilk/platform-kit": "^0.2.0",
+    "@snakesilk/xml-loader": ">=0.4.2",
+    "immutable": "^3.8.1",
+    "jquery": "2.1.3",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-redux": "^5.0.5",
+    "react-router": "^4.1.1",
+    "react-scripts": "1.0.10",
+    "redux": "^3.7.1"
   },
-  "author": "Pontus Persson",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/snakesilk/snakesilk-scene-editor/issues"
-  },
-  "homepage": "https://github.com/snakesilk/snakesilk-scene-editor#readme"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
 }
