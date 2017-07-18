@@ -1,5 +1,12 @@
+.WorkSpaces {
+    overflow: hidden;
+    position: relative;
+}
+
 .WorkSpaces > .spaces {
+  position: absolute;
   height: 100%;
+  width: 100%;
   transition: all .3s ease;
 }
 
