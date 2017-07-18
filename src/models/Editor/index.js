@@ -147,7 +147,7 @@ Editor.prototype.loadURL = function(url)
             throw new Error(`${url} does not contain <scene/>.`);
         }
 
-        this.document = $(doc);
+        this.document = $(doc.children[0]);
         return this.loadNode(sceneNode);
     });
 }
